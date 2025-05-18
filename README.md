@@ -1,65 +1,43 @@
-# Windows-basic-commands-batchscript
-Ex08-Windows-basic-commands-batchscript
+WINDOWS COMMANDS:
 
-# AIM:
-To execute Windows basic commands and batch scripting
+Exercise 1: Basic Directory and File Operations
+Create a directory named "MyLab" on the desktop.
 
-# DESIGN STEPS:
+COMMAND AND OUTPUT
+mkdir %userprofile%\Desktop\MyLab
+image
 
-### Step 1:
+Change to the "MyLab" directory and create an empty text file named "MyFile.txt" inside it.
 
-Navigate to any Windows environment installed on the system or installed inside a virtual environment like virtual box/vmware 
+COMMAND AND OUTPUT
+cd %userprofile%\Desktop\MyLab
+image
 
-### Step 2:
+type nul > MyFile.txt
+image
 
-Write the Windows commands / batch file . Save each script in a file with a .bat extension. Ensure you have the necessary permissions to perform the operations. Adapt paths as needed based on your system configuration.
-### Step 3:
+List the contents of the "MyLab" directory.
 
-Execute the necessary commands/batch file for the desired output. 
+COMMAND AND OUTPUT
+dir %userprofile%\Desktop\MyLab
+image
 
+Copy "MyFile.txt" to a new folder named "Backup" on the desktop.
 
+COMMAND AND OUTPUT
+mkdir %userprofile%\Desktop\Backup
+image
 
+copy MyFile.txt %userprofile%\Desktop\Backup
+image
 
-# WINDOWS COMMANDS:
-## Exercise 1: Basic Directory and File Operations
-Create a directory named "my-folder"
+Move the "MyLab" directory to the "Documents" folder.
 
-## COMMAND AND OUTPUT
-
-Remove the directory "my-folder"
-
-## COMMAND AND OUTPUT
-
-
-Create the file Rose.txt
-
-## COMMAND AND OUTPUT
-
-
-Create the file hello.txt using echo and redirection
-
-## COMMAND AND OUTPUT
-
-Copy the file hello.txt into the file hello1.txt
-
-## COMMAND AND OUTPUT
-
-Remove the file hello1.txt
-
-## COMMAND AND OUTPUT
-
-List out the file hello1.txt in the current directory
-
-## COMMAND AND OUTPUT
-
-List out all the associated file extensions 
-
-## COMMAND AND OUTPUT
+COMMAND AND OUTPUT
+mkdir %userprofile%\Desktop\Documents
+image
 
 
-Compare the file hello.txt and rose.txt
-
-## COMMAND AND OUTPUT
 
 ## Exercise 2: Advanced Batch Scripting
 Create a batch file named on the desktop. The batch file need to have a variable assigned with a desired name for ex. name="John" and display as "Hello, John".
